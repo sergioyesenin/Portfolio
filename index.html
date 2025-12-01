@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Егор Рабцевич — Unity-разработка, 3D-проекты, игровые механики</title>
+    <meta name="description" content="Портфолио Unity-разработчика: навыки в C#, 3D-игры, физика, UI, архитектура компонентов. Проект Hockey Sniper и опыт в командной работе." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="#"><span class="logo__text">Егор Рабцевич</span></a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a class="nav__link is-active" href="#about">Обо мне</a></li>
+        <li><a class="nav__link" href="#skills">Навыки</a></li>
+        <li><a class="nav__link" href="#education">Образование</a></li>
+        <li><a class="nav__link" href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero" id="about">
+    <div class="container hero__grid">
+      <div class="hero__media">
+        <img src="image.jpg" alt="Егор Рабцевич — Unity-разработчик" class="hero__img" />
+      </div>
+      <div class="hero__content">
+        <h1 class="hero__title">Егор Рабцевич</h1>
+        <p class="feature__text">
+          Начинающий Unity-разработчик с опытом создания 3D-игры на C#. Уверенно работаю с Unity Editor, физикой, UI и архитектурой компонентов. Стремлюсь развиваться в профессиональной среде и участвовать в реальных игровых проектах.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-header__title">Навыки</h2>
+      <div class="consulting__grid">
+        <article class="tile">
+          <h3 class="tile__title">Языки программирования</h3>
+          <p class="tile__text">C#, C++, Python (базовый уровень)</p>
+        </article>
+        <article class="tile">
+          <h3 class="tile__title">ООП и структуры данных</h3>
+          <p class="tile__text">Наследование, полиморфизм, списки, стеки, деревья</p>
+        </article>
+        <article class="tile">
+          <h3 class="tile__title">Unity и игровые механики</h3>
+          <p class="tile__text">GameObject, префабы, MonoBehaviour, физика, UI, материалы, low-poly модели</p>
+        </article>
+        <article class="tile">
+          <h3 class="tile__title">Инструменты</h3>
+          <p class="tile__text">Git, GitHub, Unity Physics, Canvas UI, Colliders, HTML/CSS, ИИ-инструменты</p>
+        </article>
+         <article class="tile">
+          <h3 class="tile__title">Web-design</h3>
+          <p class="tile__text">HTML, CSS, Flask, JavaScript</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="education" id="education">
+    <div class="container">
+      <h2 class="section-header__title">Образование</h2>
+      <div class="consulting__grid">
+        <article class="tile">
+          <h3 class="tile__title">2021–2023</h3>
+          <p class="tile__text">Минский государственный областной лицей — экономический профиль</p>
+        </article>
+        <article class="tile">
+          <h3 class="tile__title">2023–2027</h3>
+          <p class="tile__text">Академия управления при Президенте Республики Беларусь — управление информационными ресурсами</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <h2 class="section-header__title">Контакты</h2>
+      <div class="contacts__grid">
+        <div class="contacts__info">
+          <p><strong>Телефон:</strong> +375 (29) 8585407</p>
+          <p><strong>Telegram:</strong> @Sergio_Yesenin</p>
+          <p><strong>Email:</strong> 09egorabtsevich@gmail.com</p>
+          <p><strong>Адрес:</strong> Минск, пр-т Дзержинского 97</p>
+        </div>
+        <form class="form" action="#" method="post">
+          <div class="form__row">
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form__row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form__row">
+            <label for="msg">Сообщение</label>
+            <textarea id="msg" name="message" rows="4" required></textarea>
+          </div>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

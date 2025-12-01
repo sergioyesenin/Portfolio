@@ -86,6 +86,17 @@ body {
 }
 .feature__text { margin: 0; color: var(--muted); }
 
+@media (min-width: 1280px) {
+  .hero__grid {
+    grid-template-columns: 560px 1fr; /* увеличиваем ширину блока с фото */
+  }
+
+  .hero__img {
+    max-height: 720px; /* ограничиваем высоту, чтобы не растягивалось слишком сильно */
+    object-fit: cover;
+  }
+}
+
 /* ===== Section Header ===== */
 .section-header__title {
   margin: 0 0 6px;
@@ -254,3 +265,111 @@ input:focus, textarea:focus {
   transform: translateY(0);
   box-shadow: none;
 }
+
+.skills {
+  min-height: 80vh;
+  background: #eef2f7; /* контрастный фон */
+  padding: 48px 0;
+  font-family: Inter, sans-serif;
+}
+
+.skills__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.skill-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.skill-card__media img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  padding: 16px;
+}
+
+.skill-card__content {
+  padding: 16px;
+}
+
+.skill-card__title {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.skill-card__text {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Секция "Хобби" — адаптация карточек под вертикальные фото */
+.hobby-card {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  align-items: center;
+}
+
+.hobby-card__media img {
+  width: 320px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.hobby-card__content {
+  padding: 16px 24px;
+  flex: 1;
+}
+
+@media (max-width: 640px) {
+  .hobby-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hobby-card__media img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hobby-card__content {
+    padding: 16px;
+  }
+}
+
